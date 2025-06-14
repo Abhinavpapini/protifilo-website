@@ -61,7 +61,7 @@ export default function About() {
                 <div className="absolute inset-2 bg-background rounded-3xl overflow-hidden">
                   <img
                     src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
-                    alt="Abhinav"
+                    alt="Papini Abhinav"
                     className="w-full h-full object-cover"
                   />
                 </div>

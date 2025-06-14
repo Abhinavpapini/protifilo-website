@@ -67,7 +67,7 @@ export default function Navigation({ showLogo = true }: NavigationProps) {
             animate={{ scale: 1, rotate: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <span className="text-2xl font-greatVibes gradient-text font-bold">
+            <span className="text-3xl font-greatVibes gradient-text font-bold">
               &lt;Abhinav /&gt;
             </span>
           </motion.div>
@@ -78,7 +78,7 @@ export default function Navigation({ showLogo = true }: NavigationProps) {
               <motion.a
                 key={item.href}
                 href={item.href}
-                className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                className={`relative px-3 py-2 text-base font-medium transition-colors duration-200 ${
                   activeSection === item.href.substring(1)
                     ? 'text-cyan-400'
                     : 'text-muted-foreground hover:text-foreground'

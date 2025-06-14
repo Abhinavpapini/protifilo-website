@@ -82,7 +82,7 @@ export default function Hero() {
           >
             <div className="glass rounded-2xl px-8 py-6 backdrop-blur-xl border border-cyan-500/20">
               <h1 className="text-5xl md:text-7xl font-greatVibes text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-purple-600 font-bold">
-                &lt;Abhinav /&gt;
+                &lt;Papini Abhinav /&gt;
               </h1>
             </div>
             

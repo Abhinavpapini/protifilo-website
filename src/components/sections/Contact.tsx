@@ -146,12 +146,12 @@ export default function Contact() {
 					className="mt-20 text-center border-t border-border/50 pt-8"
 				>
 					<p className="text-muted-foreground">
-						© 2024 Abhinav. Built with ❤️ using React, TypeScript, and Tailwind
+						© 2024 Papini Abhinav. Built with ❤️ using React, TypeScript, and Tailwind
 						CSS.
 					</p>
 					<motion.div className="mt-4" whileHover={{ scale: 1.05 }}>
 						<span className="text-2xl font-greatVibes gradient-text font-bold">
-							&lt;Abhinav /&gt;
+							&lt;Papini Abhinav /&gt;
 						</span>
 					</motion.div>
 				</motion.div>

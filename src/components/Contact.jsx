@@ -24,13 +24,12 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
+    emailjs      .send(
         "service_0s3ukxb",
         "template_k2ga7od",
         {
           from_name: form.name,
-          to_name: "Abhinav Papini",
+          to_name: "Papini Abhinav",
           from_email: form.email,
           to_email: "papiniabhinav@gmail.com",
           message: form.message,
