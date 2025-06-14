@@ -48,7 +48,17 @@ export default function ParticleBackground() {
       }
     };
 
-    const drawParticle = (particle: any) => {
+    type Particle = {
+      x: number;
+      y: number;
+      vx: number;
+      vy: number;
+      size: number;
+      opacity: number;
+      type: 'circle' | 'square' | 'triangle';
+    };
+
+    const drawParticle = (particle: Particle) => {
       const isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
       const color = isDark ? '6, 182, 212' : '59, 130, 246'; // cyan for dark, blue for light
       
@@ -105,7 +115,7 @@ export default function ParticleBackground() {
               ctx.beginPath();
               ctx.moveTo(particle.x, particle.y);
               ctx.lineTo(otherParticle.x, otherParticle.y);
-              ctx.strokeStyle = `rgba(${color}, ${0.15 * (1 - distance / 120)})`;
+              ctx.strokeStyle = `rgba(${color}, ${0.25 * (1 - distance / 120)})`;
               ctx.lineWidth = 1;
               ctx.stroke();
             }
@@ -135,7 +145,7 @@ export default function ParticleBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="absolute inset-0 pointer-events-none opacity-40"
+      className="absolute inset-0 pointer-events-none opacity-50 dark:opacity-40"
       style={{ zIndex: 1 }}
     />
   );

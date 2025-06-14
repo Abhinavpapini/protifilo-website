@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind directives removed because Tailwind CSS is not processing this file */
 
 /* Custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&family=Great+Vibes&display=swap');
@@ -23,17 +21,17 @@
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted-foreground: 215.4 30% 30%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 210 40% 90%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 60%;
+    --input: 214.3 31.8% 60%;
+    --ring: 222.2 84% 20%;
 
     --radius: 0.5rem;
   }
@@ -71,7 +69,7 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
 
   html {
@@ -80,7 +78,8 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
     font-family: 'Inter', sans-serif;
     cursor: none;
   }
@@ -142,9 +141,10 @@
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .dark .glass {
@@ -168,4 +168,8 @@
 .hover-glow:hover {
   box-shadow: 0 0 20px rgba(6, 182, 212, 0.6);
   transform: translateY(-2px);
+}
+
+.light .hover-glow:hover {
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.8), 0 0 5px rgba(0, 0, 0, 0.1);
 }

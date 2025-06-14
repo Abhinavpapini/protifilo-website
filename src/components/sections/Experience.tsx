@@ -116,7 +116,7 @@ export default function Experience() {
                           {exp.technologies.map((tech, techIndex) => (
                             <motion.span
                               key={techIndex}
-                              className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 text-cyan-400 text-xs rounded-full border border-cyan-500/30"
+                              className="px-3 py-1 bg-gradient-to-r from-cyan-500/30 to-purple-500/30 text-cyan-700 dark:text-cyan-400 text-xs rounded-full border border-cyan-500/50 dark:border-cyan-500/30"
                               whileHover={{ scale: 1.05 }}
                               transition={{ duration: 0.2 }}
                             >

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useTheme } from './ThemeProvider';
 import { Button } from '@/components/ui/button';
@@ -16,7 +15,7 @@ export function ThemeToggle() {
         variant="outline"
         size="icon"
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-        className="relative overflow-hidden group bg-transparent border-2 border-cyan-500/30 hover:border-cyan-500 transition-all duration-300"
+        className="relative overflow-hidden group bg-transparent border-2 border-cyan-500/50 hover:border-cyan-500 transition-all duration-300"
       >
         <motion.div
           initial={false}
