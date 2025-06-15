@@ -4,60 +4,63 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: "DharmaSetu",
+    description: "An AI-powered legal assistant platform for civic governance, with features like chatbot, case outcome predictor, and dispute resolution advisor.",
+    image: "https://images.unsplash.com/photo-1600267165504-7b282aef1d68?w=600&h=400&fit=crop",
+    technologies: ["Next.js", "Flask", "MongoDB", "Langchain", "Ollama"],
+    githubUrl: "https://github.com/AdithyaVarma28/DharmaSetu",
+    liveUrl: "https://google.com",
+    gradient: "from-cyan-400 to-blue-500"
+  },
+  {
+    title: "Gym Analytics App",
+    description: "A data-driven dashboard analyzing gym member activity using a CSV dataset and beautiful data visuals.",
+    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50c?w=600&h=400&fit=crop",
+    technologies: ["React", "Pandas", "Flask", "Chart.js"],
+    githubUrl: "https://github.com/Abhinavpapini/gym-pulse",
+    liveUrl: "https://gym-pulse-eight.vercel.app/",
+    gradient: "from-blue-500 to-purple-500"
+  },
+  {
+    title: "Blogosphere",
+    description: "A multi-role blogging platform with secure login, content management, and Markdown editor.",
+    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=600&h=400&fit=crop",
+    technologies: ["MongoDB", "React", "Node.js", "Express"],
+    githubUrl: "https://github.com/Abhinavpapini/BlogSphere",
+    liveUrl: "https://blog-sphere-hazel-eta.vercel.app/",
+    gradient: "from-purple-500 to-pink-500"
+  },
+  {
+    title: "Ecficio Website",
+    description: "Official website for the Ecficio entrepreneurship fest, with event showcase and registration features.",
+    image: "https://images.unsplash.com/photo-1581091012184-7b62fceba618?w=600&h=400&fit=crop",
+    technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    githubUrl: "https://github.com/Abhinavpapini/Ecficio",
+    liveUrl: "https://ecficio-vj.vercel.app/",
+    gradient: "from-pink-500 to-red-500"
+  },
+  {
+    title: "Pixel Paradise",
+    description: "Fun and interactive arcade-style game using OOP and Turtle graphics in Python.",
+    image: "https://images.unsplash.com/photo-1588459468340-e716f3f0d5b4?w=600&h=400&fit=crop",
+    technologies: ["Python", "Turtle", "OOP"],
+    githubUrl: "https://github.com/Abhinavpapini/Pixel-Paradise-",
+    liveUrl: "https://google.com",
+    gradient: "from-red-500 to-orange-500"
+  },
+  {
     title: "E-Commerce Platform",
     description: "A full-featured e-commerce platform with cart management, payment integration, and admin dashboard.",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
     technologies: ["React", "Node.js", "MongoDB", "Stripe"],
     githubUrl: "https://github.com",
     liveUrl: "https://example.com",
-    gradient: "from-cyan-400 to-blue-500"
-  },
-  {
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates and team collaboration features.",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
-    technologies: ["Vue.js", "Firebase", "Vuetify", "PWA"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    gradient: "from-blue-500 to-purple-500"
-  },
-  {
-    title: "Weather Dashboard",
-    description: "A beautiful weather dashboard with forecasts, maps, and location-based weather data.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
-    technologies: ["React", "TypeScript", "Chart.js", "Weather API"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    gradient: "from-purple-500 to-pink-500"
-  },
-  {
-    title: "Portfolio Website",
-    description: "A responsive portfolio website with animations, dark mode, and contact form integration.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
-    technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    gradient: "from-pink-500 to-red-500"
-  },
-  {
-    title: "Social Media Dashboard",
-    description: "Analytics dashboard for social media management with real-time data visualization.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop",
-    technologies: ["React", "D3.js", "Express", "PostgreSQL"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    gradient: "from-red-500 to-orange-500"
-  },
-  {
-    title: "Learning Platform",
-    description: "An interactive learning platform with video courses, quizzes, and progress tracking.",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop",
-    technologies: ["Angular", "TypeScript", "Material UI", "Node.js"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
     gradient: "from-orange-500 to-yellow-500"
   }
 ];
+
+
+
 
 export default function Projects() {
   return (
