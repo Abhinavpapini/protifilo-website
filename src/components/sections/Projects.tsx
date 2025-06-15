@@ -6,16 +6,16 @@ const projects = [
   {
     title: "DharmaSetu",
     description: "An AI-powered legal assistant platform for civic governance, with features like chatbot, case outcome predictor, and dispute resolution advisor.",
-    image: "https://images.unsplash.com/photo-1600267165504-7b282aef1d68?w=600&h=400&fit=crop",
+    image: "Dharmasetu.webp",
     technologies: ["Next.js", "Flask", "MongoDB", "Langchain", "Ollama"],
-    githubUrl: "https://github.com/AdithyaVarma28/DharmaSetu",
-    liveUrl: "https://google.com",
+    githubUrl: "https://github.com/Abhinavpapini/Dharmasetu",
+    liveUrl: "https://dharmasetu.vercel.app/",
     gradient: "from-cyan-400 to-blue-500"
   },
   {
     title: "Gym Analytics App",
     description: "A data-driven dashboard analyzing gym member activity using a CSV dataset and beautiful data visuals.",
-    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50c?w=600&h=400&fit=crop",
+    image: "Gym.webp",
     technologies: ["React", "Pandas", "Flask", "Chart.js"],
     githubUrl: "https://github.com/Abhinavpapini/gym-pulse",
     liveUrl: "https://gym-pulse-eight.vercel.app/",
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "Blogosphere",
     description: "A multi-role blogging platform with secure login, content management, and Markdown editor.",
-    image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=600&h=400&fit=crop",
+    image: "Blogsphere.webp",
     technologies: ["MongoDB", "React", "Node.js", "Express"],
     githubUrl: "https://github.com/Abhinavpapini/BlogSphere",
     liveUrl: "https://blog-sphere-hazel-eta.vercel.app/",
@@ -33,7 +33,7 @@ const projects = [
   {
     title: "Ecficio Website",
     description: "Official website for the Ecficio entrepreneurship fest, with event showcase and registration features.",
-    image: "https://images.unsplash.com/photo-1581091012184-7b62fceba618?w=600&h=400&fit=crop",
+    image: "Ecficio.webp",
     technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
     githubUrl: "https://github.com/Abhinavpapini/Ecficio",
     liveUrl: "https://ecficio-vj.vercel.app/",
@@ -42,7 +42,7 @@ const projects = [
   {
     title: "Pixel Paradise",
     description: "Fun and interactive arcade-style game using OOP and Turtle graphics in Python.",
-    image: "https://images.unsplash.com/photo-1588459468340-e716f3f0d5b4?w=600&h=400&fit=crop",
+    image: "arcade.webp",
     technologies: ["Python", "Turtle", "OOP"],
     githubUrl: "https://github.com/Abhinavpapini/Pixel-Paradise-",
     liveUrl: "https://google.com",
