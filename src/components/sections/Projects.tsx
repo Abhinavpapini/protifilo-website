@@ -163,7 +163,7 @@ export default function Projects() {
         >
           <p className="text-muted-foreground mb-6">Want to see more of my work?</p>
           <motion.a
-            href="https://github.com"
+            href="https://github.com/Abhinavpapini"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-full font-medium text-lg hover-glow transition-all duration-300"

@@ -4,46 +4,58 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    company: "TechCorp Solutions",
-    position: "Senior Frontend Developer",
-    period: "2022 - Present",
+    company: "Swecha",
+    position: "Tech Intern",
+    period: "May 2025 - June 2025",
+    location: "Hyderabad, India",
+    description: "Contributed to open-source civic tech initiatives focused on public access and governance. Collaborated with teams to build user-facing components and improve backend logic for real-world deployment.",
+    technologies: ["React", "Node.js", "MongoDB", "Flask", "Next.js"],
+    logo: "🌱",
+    color: "from-green-400 to-blue-500"
+  },
+  {
+    company: "Open Source Projects",
+    position: "Contributor",
+    period: "2024 - Present",
     location: "Remote",
-    description: "Leading frontend development for enterprise web applications using React, TypeScript, and modern CSS frameworks. Collaborated with cross-functional teams to deliver high-quality user experiences.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js", "GraphQL"],
-    logo: "🏢",
-    color: "from-cyan-400 to-blue-500"
+    description: "Actively contributing to open-source repositories focused on education, accessibility, and governance. Helped resolve issues, improve UI/UX, and integrate AI-driven tools into community-based platforms.",
+    technologies: ["GitHub", "Next.js", "LangChain", "Python", "FOSS Tools"],
+    logo: "🌍",
+    color: "from-yellow-400 to-fuchsia-500"
   },
   {
-    company: "Digital Innovations",
-    position: "Frontend Developer",
-    period: "2020 - 2022",
-    location: "New York, NY",
-    description: "Developed responsive web applications and interactive user interfaces. Implemented modern design systems and improved application performance by 40%.",
-    technologies: ["React", "JavaScript", "SCSS", "Redux", "REST APIs"],
-    logo: "💼",
-    color: "from-blue-500 to-purple-500"
+    company: "Freelance & Campus Projects",
+    position: "Frontend & Design Developer",
+    period: "2023 - 2025",
+    location: "Remote / Campus",
+    description: "Worked on a variety of real-world projects like event websites, chatbot solutions, and legal aid tools. Emphasized clean UI, accessibility, and bringing functionality to life with engaging interfaces.",
+    technologies: ["React", "Tailwind CSS", "Figma", "Flask", "Langflow"],
+    logo: "🎯",
+    color: "from-cyan-500 to-purple-500"
   },
   {
-    company: "StartupXYZ",
-    position: "Junior Developer",
-    period: "2019 - 2020",
-    location: "San Francisco, CA",
-    description: "Built and maintained web applications using modern JavaScript frameworks. Contributed to the development of the company's main product and helped improve user engagement by 25%.",
-    technologies: ["Vue.js", "JavaScript", "CSS3", "Firebase", "Node.js"],
-    logo: "🚀",
-    color: "from-purple-500 to-pink-500"
-  },
-  {
-    company: "Freelance",
-    position: "Web Developer",
-    period: "2018 - 2019",
-    location: "Remote",
-    description: "Worked with various clients to create custom websites and web applications. Focused on responsive design and optimal user experience across all devices.",
-    technologies: ["HTML5", "CSS3", "JavaScript", "WordPress", "PHP"],
-    logo: "💻",
-    color: "from-pink-500 to-red-500"
-  }
+  company: "CSI VNR Student Chapter",
+  position: "Core Commitee Member",
+  period: "2022 - Present",
+  location: "VNRVJIET",
+  description: "Contributed to club-led tech events and designathons. Handled web design, coordinated online infrastructure, and helped in judging and evaluation workflows.",
+  technologies: ["Event Planning", "Web Development", "Figma", "Tailwind CSS"],
+  logo: "💡",
+  color: "from-blue-500 to-teal-500"
+},
+{
+  company: "VJMUNSOC & Stentorian",
+  position: "Video Editor & USG of Media",
+  period: "2023 - Present",
+  location: "VNRVJIET",
+  description: "Active in both the MUN and literary wings—participated in debates, wrote for college publications, and contributed to event scripts and editorial content.",
+  technologies: ["Public Speaking", "Writing", "Editing", "Research"],
+  logo: "🗣️",
+  color: "from-rose-500 to-purple-500"
+}
 ];
+
+
 
 export default function Experience() {
   return (

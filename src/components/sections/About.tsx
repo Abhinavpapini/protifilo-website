@@ -5,23 +5,24 @@ import { motion } from 'framer-motion';
 const reflectiveAnswers = [
   {
     question: "Who I Am",
-    answer: "A creative developer who loves building beautiful interfaces and experiences",
-    icon: "👨‍💻",
+    answer: "A curious mind with a coder's brain and a designer’s eye — blending creativity, community, and clean code to make ideas come alive.",
+    icon: "🧠",
     gradient: "from-cyan-400 to-blue-500"
   },
   {
     question: "What I Do", 
-    answer: "Transform ideas into reality with clean code and stunning designs",
-    icon: "⚡",
+    answer: "Craft stunning web experiences, lead teams with vision, and build projects that fuse tech with storytelling — from hackathons to real-world impact.",
+    icon: "🚀",
     gradient: "from-blue-500 to-purple-500"
   },
   {
     question: "Why Me",
-    answer: "I combine technical skills with creativity to deliver exceptional results",
-    icon: "🌟",
+    answer: "Because I don't just build websites — I create experiences. With every pixel and line of code, I bring passion, leadership, and purpose to the table.",
+    icon: "🔥",
     gradient: "from-purple-500 to-pink-500"
   }
 ];
+
 
 export default function About() {
   return (
@@ -60,7 +61,7 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 rounded-3xl animate-pulse opacity-75" />
                 <div className="absolute inset-2 bg-background rounded-3xl overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
+                    src="abhinav.webp"
                     alt="Papini Abhinav"
                     className="w-full h-full object-cover"
                   />
@@ -88,12 +89,15 @@ export default function About() {
               <h3 className="text-2xl font-semibold mb-4 gradient-text">Who am I?</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I'm a passionate frontend developer with a keen eye for design and user experience.
-                  Currently pursuing B.Tech CSE at VNRVJIET (2022-2026), I specialize in creating beautiful,
-                  functional, and responsive web applications that deliver exceptional user experiences.
+                I'm Abhinav — a developer, designer, storyteller, and tech community enthusiast from VNRVJIET. 
+                I'm currently pursuing B.Tech in CSE (2023-2027), and I spend my days shaping digital experiences that are as visually striking as they are technically sound.
+                </p>
+                <p>
+                  From leading college hackathons to crafting AI-powered platforms and community-driven designathons, I live for moments where innovation meets impact. 
+                  I love turning blank screens into meaningful user journeys — backed by clean code, framer-motion flair, and just a dash of ✨ chaos.
                 </p>
                 <p className="text-sm text-muted-foreground/70 italic">
-                  [More content will be added here about my technical journey, values, and stack]
+                  Tech stacks change, but creativity, curiosity, and consistency are my constants.
                 </p>
               </div>
             </motion.div>

@@ -5,10 +5,13 @@ import ParticleBackground from '../ParticleBackground';
 
 const typewriterTexts = [
   "Frontend Developer",
-  "UI/UX Enthusiast", 
   "Freelancer",
+  "UI/UX Enthusiast", 
   "Full-Stack Developer",
-  "AI/ML Explorer"
+  "Video Editor",
+  "Content Creator",
+  "Open Source Contributor",
+  "AI/ML Engineer"
 ];
 
 export default function Hero() {
@@ -20,7 +23,7 @@ export default function Hero() {
   useEffect(() => {
     const typeSpeed = 100;
     const eraseSpeed = 50;
-    const pauseTime = 2000;
+    const pauseTime = 800;
 
     let timeout: NodeJS.Timeout;
 
@@ -56,8 +59,8 @@ export default function Hero() {
     return () => clearInterval(cursorInterval);
   }, []);
 
-  const scrollToAbout = () => {
-    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToProjects = () => {
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -121,7 +124,7 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
             <motion.button
-              onClick={scrollToAbout}
+              onClick={scrollToProjects}
               className="group relative inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-purple-600 text-white rounded-full font-medium text-lg overflow-hidden transition-all duration-300 hover-glow"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
