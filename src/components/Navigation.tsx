@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ThemeToggle } from './ThemeToggle';
 
+// Import Dancing Script font
+import '../styles/font.css';
+
 const navItems = [
   { href: '#home', label: 'Home' },
   { href: '#about', label: 'About' },
@@ -67,7 +70,7 @@ export default function Navigation({ showLogo = true }: NavigationProps) {
             animate={{ scale: 1, rotate: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <span className="text-3xl font-greatVibes gradient-text font-bold">
+            <span className="text-3xl font-dancing gradient-text font-bold">
               &lt;Abhinav /&gt;
             </span>
           </motion.div>
