@@ -5,57 +5,111 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     title: "DharmaSetu",
-    description: "An AI-powered legal assistant platform for civic governance, with features like chatbot, case outcome predictor, and dispute resolution advisor.",
+    description: "An AI-powered legal assistant platform for civic governance with chatbot features, case outcome predictor, and dispute resolution advisor.",
     image: "Dharmasetu.webp",
-    technologies: ["Next.js", "Flask", "MongoDB", "Langchain", "Ollama"],
+    technologies: ["Next.js", "Flask", "MongoDB", "Langchain"],
     githubUrl: "https://github.com/Abhinavpapini/Dharmasetu",
     liveUrl: "https://dharmasetu.vercel.app/",
     gradient: "from-cyan-400 to-blue-500"
   },
   {
+    title: "ShopSizzle",
+    description: "Modern e-commerce platform with authentication, product catalog management, cart functionality, and comprehensive order tracking system.",
+    image: "placeholder.svg",
+    technologies: ["React", "TypeScript", "Clerk", "Tailwind CSS"],
+    githubUrl: "https://github.com/Abhinavpapini/ShopSizzle",
+    liveUrl: "https://shop-sizzle-ochre.vercel.app/",
+    gradient: "from-blue-500 to-purple-500"
+  },
+  {
+    title: "AI Career Coach",
+    description: "Comprehensive career guidance platform with AI-powered resume building, mock interviews, and personalized career advice using Google Gemini AI.",
+    image: "placeholder.svg",
+    technologies: ["Next.js 15", "PostgreSQL", "Gemini AI", "Clerk"],
+    githubUrl: "https://github.com/Abhinavpapini/AI-Career-Coach",
+    liveUrl: "https://ai-career-coach-brown-five.vercel.app/",
+    gradient: "from-purple-500 to-pink-500"
+  },
+  {
+    title: "FixU - Home Services Platform",
+    description: "Professional home services platform connecting customers with service providers across India, featuring booking system, payments, and admin dashboard.",
+    image: "placeholder.svg",
+    technologies: ["Next.js 15", "MongoDB", "Razorpay", "JWT"],
+    githubUrl: "https://github.com/Abhinavpapini/FixU",
+    liveUrl: "https://fix-u-drab.vercel.app/",
+    gradient: "from-pink-500 to-red-500"
+  },
+  {
+    title: "Background Removal App",
+    description: "AI-powered background removal tool with user authentication, credit-based system, and Razorpay payment integration for seamless image processing.",
+    image: "placeholder.svg",
+    technologies: ["React 19", "Node.js", "MongoDB", "Clipdrop API"],
+    githubUrl: "https://github.com/Abhinavpapini/BG-Removal",
+    liveUrl: "https://bg-removal-client-flame.vercel.app/",
+    gradient: "from-red-500 to-orange-500"
+  },
+  {
+    title: "AI Code Reviewer",
+    description: "Intelligent code analysis tool powered by AI that provides comprehensive code reviews, optimization suggestions, and multi-language code conversion.",
+    image: "placeholder.svg",
+    technologies: ["React 19", "Node.js", "Groq SDK", "PrismJS"],
+    githubUrl: "https://github.com/Abhinavpapini/Code-Visualizer",
+    liveUrl: "https://ai-code-reviewer-ruddy.vercel.app/",
+    gradient: "from-orange-500 to-yellow-500"
+  },
+  {
+    title: "Zyphra Voice AI",
+    description: "Advanced virtual assistant with voice recognition, AI-powered responses, text-to-speech functionality, and seamless website navigation command system.",
+    image: "placeholder.svg",
+    technologies: ["React", "Gemini AI", "Web Speech API", "Vite"],
+    githubUrl: "https://github.com/Abhinavpapini/Zyphra-Voice-AI",
+    liveUrl: "https://zyphra-voice-ai.vercel.app/",
+    gradient: "from-yellow-500 to-green-500"
+  },
+  {
     title: "Gym Analytics App",
-    description: "A data-driven dashboard analyzing gym member activity using a CSV dataset and beautiful data visuals.",
+    description: "A comprehensive data-driven dashboard analyzing gym member activity patterns using CSV dataset with beautiful interactive data visualizations.",
     image: "Gym.webp",
     technologies: ["React", "Pandas", "Flask", "Chart.js"],
     githubUrl: "https://github.com/Abhinavpapini/gym-pulse",
     liveUrl: "https://gym-pulse-eight.vercel.app/",
-    gradient: "from-blue-500 to-purple-500"
+    gradient: "from-green-500 to-teal-500"
   },
   {
     title: "Blogosphere",
-    description: "A multi-role blogging platform with secure login, content management, and Markdown editor.",
+    description: "A comprehensive multi-role blogging platform with secure authentication, advanced content management system, and intuitive Markdown editor.",
     image: "Blogsphere.webp",
     technologies: ["MongoDB", "React", "Node.js", "Express"],
     githubUrl: "https://github.com/Abhinavpapini/BlogSphere",
     liveUrl: "https://blog-sphere-hazel-eta.vercel.app/",
-    gradient: "from-purple-500 to-pink-500"
+    gradient: "from-teal-500 to-cyan-500"
+  },
+  {
+    title: "Soil Prediction System",
+    description: "Machine learning-based crop recommendation system using KNN algorithm with intuitive Tkinter GUI, trained on 100k+ soil records.",
+    image: "placeholder.svg",
+    technologies: ["Python", "Scikit-learn", "Tkinter", "KNN"],
+    githubUrl: "https://github.com/Abhinavpapini/SoilPred-main",
+    liveUrl: "https://github.com/Abhinavpapini/SoilPred-main",
+    gradient: "from-cyan-500 to-blue-500"
   },
   {
     title: "Ecficio Website",
-    description: "Official website for the Ecficio entrepreneurship fest, with event showcase and registration features.",
+    description: "Official website for the prestigious Ecficio entrepreneurship festival, featuring  event showcase, registration system, and interactive experience.",
     image: "Ecficio.webp",
     technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
     githubUrl: "https://github.com/Abhinavpapini/Ecficio",
     liveUrl: "https://ecficio-vj.vercel.app/",
-    gradient: "from-pink-500 to-red-500"
+    gradient: "from-blue-500 to-purple-500"
   },
   {
     title: "Pixel Paradise",
-    description: "Fun and interactive arcade-style game using OOP and Turtle graphics in Python.",
+    description: "Fun and interactive arcade-style gaming experience built using object-oriented programming principles and Python Turtle graphics for engaging gameplay.",
     image: "arcade.webp",
-    technologies: ["Python", "Turtle", "OOP"],
+    technologies: ["Python", "Turtle Graphics", "OOP", "Game Dev"],
     githubUrl: "https://github.com/Abhinavpapini/Pixel-Paradise-",
     liveUrl: "https://google.com",
-    gradient: "from-red-500 to-orange-500"
-  },
-  {
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with cart management, payment integration, and admin dashboard.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    gradient: "from-orange-500 to-yellow-500"
+    gradient: "from-purple-500 to-pink-500"
   }
 ];
 
