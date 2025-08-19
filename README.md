@@ -2,7 +2,6 @@
 
 A modern, interactive portfolio website showcasing the work and skills of **Papini Abhinav**, a passionate Frontend Developer, AI/ML Engineer, and Open Source Contributor.
 
-![Portfolio Preview](public/abhinav.webp)
 
 ## 👨‍💻 About
 
