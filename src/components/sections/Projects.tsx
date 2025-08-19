@@ -15,7 +15,7 @@ const projects = [
   {
     title: "ShopSizzle",
     description: "Modern e-commerce platform with authentication, product catalog management, cart functionality, and comprehensive order tracking system.",
-    image: "placeholder.svg",
+    image: "shopsizzle.webp",
     technologies: ["React", "TypeScript", "Clerk", "Tailwind CSS"],
     githubUrl: "https://github.com/Abhinavpapini/ShopSizzle",
     liveUrl: "https://shop-sizzle-ochre.vercel.app/",
@@ -24,7 +24,7 @@ const projects = [
   {
     title: "AI Career Coach",
     description: "Comprehensive career guidance platform with AI-powered resume building, mock interviews, and personalized career advice using Google Gemini AI.",
-    image: "placeholder.svg",
+    image: "carrer.webp",
     technologies: ["Next.js 15", "PostgreSQL", "Gemini AI", "Clerk"],
     githubUrl: "https://github.com/Abhinavpapini/AI-Career-Coach",
     liveUrl: "https://ai-career-coach-brown-five.vercel.app/",
@@ -33,7 +33,7 @@ const projects = [
   {
     title: "FixU - Home Services Platform",
     description: "Professional home services platform connecting customers with service providers across India, featuring booking system, payments, and admin dashboard.",
-    image: "placeholder.svg",
+    image: "fixu.webp",
     technologies: ["Next.js 15", "MongoDB", "Razorpay", "JWT"],
     githubUrl: "https://github.com/Abhinavpapini/FixU",
     liveUrl: "https://fix-u-drab.vercel.app/",
@@ -42,7 +42,7 @@ const projects = [
   {
     title: "Background Removal App",
     description: "AI-powered background removal tool with user authentication, credit-based system, and Razorpay payment integration for seamless image processing.",
-    image: "placeholder.svg",
+    image: "bgremoval.webp",
     technologies: ["React 19", "Node.js", "MongoDB", "Clipdrop API"],
     githubUrl: "https://github.com/Abhinavpapini/BG-Removal",
     liveUrl: "https://bg-removal-client-flame.vercel.app/",
@@ -51,7 +51,7 @@ const projects = [
   {
     title: "AI Code Reviewer",
     description: "Intelligent code analysis tool powered by AI that provides comprehensive code reviews, optimization suggestions, and multi-language code conversion.",
-    image: "placeholder.svg",
+    image: "coderev.webp",
     technologies: ["React 19", "Node.js", "Groq SDK", "PrismJS"],
     githubUrl: "https://github.com/Abhinavpapini/Code-Visualizer",
     liveUrl: "https://ai-code-reviewer-ruddy.vercel.app/",
@@ -60,7 +60,7 @@ const projects = [
   {
     title: "Zyphra Voice AI",
     description: "Advanced virtual assistant with voice recognition, AI-powered responses, text-to-speech functionality, and seamless website navigation command system.",
-    image: "placeholder.svg",
+    image: "zpyhra.webp",
     technologies: ["React", "Gemini AI", "Web Speech API", "Vite"],
     githubUrl: "https://github.com/Abhinavpapini/Zyphra-Voice-AI",
     liveUrl: "https://zyphra-voice-ai.vercel.app/",
@@ -87,7 +87,7 @@ const projects = [
   {
     title: "Soil Prediction System",
     description: "Machine learning-based crop recommendation system using KNN algorithm with intuitive Tkinter GUI, trained on 100k+ soil records.",
-    image: "placeholder.svg",
+    image: "soil.webp",
     technologies: ["Python", "Scikit-learn", "Tkinter", "KNN"],
     githubUrl: "https://github.com/Abhinavpapini/SoilPred-main",
     liveUrl: "https://github.com/Abhinavpapini/SoilPred-main",
