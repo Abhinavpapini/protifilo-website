@@ -2,7 +2,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  githubUrl: string;
+  liveUrl: string;
+  gradient: string;
+}
+
+const featuredProjects = [
   {
     title: "DharmaSetu",
     description: "An AI-powered legal assistant platform for civic governance with chatbot features, case outcome predictor, and dispute resolution advisor.",
@@ -92,6 +102,27 @@ const projects = [
     githubUrl: "https://github.com/Abhinavpapini/SoilPred-main",
     liveUrl: "https://github.com/Abhinavpapini/SoilPred-main",
     gradient: "from-cyan-500 to-blue-500"
+  }
+];
+
+const academicProjects = [
+  {
+    title: "Literovia 2025",
+    description: "Premium literary festival website with integrated Razorpay payments, automated registration management, and 15+ literary events across 2 days.",
+    image: "stent.webp",
+    technologies: ["React", "TypeScript", "Razorpay", "Google Sheets"],
+    githubUrl: "https://github.com/stentroverts/literovia",
+    liveUrl: "https://www.literovia.com/",
+    gradient: "from-emerald-400 to-teal-500"
+  },
+  {
+    title: "CSI VNRVJIET Official Website",
+    description: "Official website for Computer Society of India VNRVJIET chapter featuring event showcases, member management, and comprehensive information portal.",
+    image: "csiweb.webp",
+    technologies: ["React", "JavaScript", "CSS", "HTML"],
+    githubUrl: "https://github.com/shravani2905/VNRVJIET_CSI_WEB",
+    liveUrl: "https://vnrvjietcsi.com/",
+    gradient: "from-teal-400 to-cyan-500"
   },
   {
     title: "Ecficio Website",
@@ -100,16 +131,16 @@ const projects = [
     technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
     githubUrl: "https://github.com/Abhinavpapini/Ecficio",
     liveUrl: "https://ecficio-vj.vercel.app/",
-    gradient: "from-blue-500 to-purple-500"
+    gradient: "from-cyan-400 to-blue-500"
   },
   {
-    title: "Pixel Paradise",
-    description: "Fun and interactive arcade-style gaming experience built using object-oriented programming principles and Python Turtle graphics for engaging gameplay.",
-    image: "arcade.webp",
-    technologies: ["Python", "Turtle Graphics", "OOP", "Game Dev"],
-    githubUrl: "https://github.com/Abhinavpapini/Pixel-Paradise-",
-    liveUrl: "https://google.com",
-    gradient: "from-purple-500 to-pink-500"
+    title: "FlashForte 2K25",
+    description: "Interactive event page for FlashForte 2025 featuring modern design, event information, and engaging user experience with responsive layout.",
+    image: "flash.webp",
+    technologies: ["React", "JavaScript", "CSS", "Vercel"],
+    githubUrl: "https://github.com/nagasresht/flashfirte-verse-explorer-53",
+    liveUrl: "https://flashforte2k25.vercel.app/",
+    gradient: "from-blue-400 to-purple-500"
   }
 ];
 
@@ -117,9 +148,83 @@ const projects = [
 
 
 export default function Projects() {
+  const renderProjectCard = (project: Project, index: number) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      whileHover={{ y: -10 }}
+      className="group relative"
+    >
+      <div className="glass rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 hover-glow transition-all duration-300">
+        {/* Image */}
+        <div className="relative overflow-hidden">
+          <motion.img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+            whileHover={{ scale: 1.1 }}
+          />
+          <div className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-300`} />
+        </div>
+
+        {/* Content */}
+        <div className="p-6">
+          <h3 className={`text-xl font-semibold mb-2 bg-gradient-to-r ${project.gradient} bg-clip-text text-transparent`}>
+            {project.title}
+          </h3>
+          <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
+            {project.description}
+          </p>
+
+          {/* Technologies */}
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.technologies.map((tech: string, techIndex: number) => (
+              <motion.span
+                key={techIndex}
+                className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded-md border border-border"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+              >
+                {tech}
+              </motion.span>
+            ))}
+          </div>
+
+          {/* Action buttons */}
+          <div className="flex space-x-4">
+            <motion.a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex-1 py-2 px-4 bg-gradient-to-r ${project.gradient} bg-opacity-20 hover:bg-opacity-30 text-center rounded-lg border border-current transition-all duration-300 text-sm font-medium`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              GitHub
+            </motion.a>
+            <motion.a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex-1 py-2 px-4 bg-gradient-to-r ${project.gradient} text-white text-center rounded-lg transition-all duration-300 text-sm font-medium hover-glow`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Live Demo
+            </motion.a>
+          </div>
+        </div>
+      </div>
+    </motion.div>
+  );
+
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        {/* Featured Projects Section */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -128,86 +233,37 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Projects</span>
+            <span className="gradient-text">Featured Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A showcase of my recent work and creative solutions
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ y: -10 }}
-              className="group relative"
-            >
-              <div className="glass rounded-xl overflow-hidden backdrop-blur-xl border border-white/10 hover-glow transition-all duration-300">
-                {/* Image */}
-                <div className="relative overflow-hidden">
-                  <motion.img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                    whileHover={{ scale: 1.1 }}
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-300`} />
-                </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+          {featuredProjects.map((project, index) => renderProjectCard(project, index))}
+        </div>
 
-                {/* Content */}
-                <div className="p-6">
-                  <h3 className={`text-xl font-semibold mb-2 bg-gradient-to-r ${project.gradient} bg-clip-text text-transparent`}>
-                    {project.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4 text-sm leading-relaxed">
-                    {project.description}
-                  </p>
+        {/* Academic Projects Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-emerald-400 via-teal-500 to-cyan-500 bg-clip-text text-transparent">
+              Academic Projects
+            </span>
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            College projects showcasing technical skills and collaborative development
+          </p>
+        </motion.div>
 
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, techIndex) => (
-                      <motion.span
-                        key={techIndex}
-                        className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded-md border border-border"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        {tech}
-                      </motion.span>
-                    ))}
-                  </div>
-
-                  {/* Action buttons */}
-                  <div className="flex space-x-4">
-                    <motion.a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex-1 py-2 px-4 bg-gradient-to-r ${project.gradient} bg-opacity-20 hover:bg-opacity-30 text-center rounded-lg border border-current transition-all duration-300 text-sm font-medium`}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      GitHub
-                    </motion.a>
-                    <motion.a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex-1 py-2 px-4 bg-gradient-to-r ${project.gradient} text-white text-center rounded-lg transition-all duration-300 text-sm font-medium hover-glow`}
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      Live Demo
-                    </motion.a>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {academicProjects.map((project, index) => renderProjectCard(project, index))}
         </div>
 
         {/* Call to action */}
