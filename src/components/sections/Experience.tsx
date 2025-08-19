@@ -26,7 +26,7 @@ const experiences = [
   {
     company: "Freelance & Campus Projects",
     position: "Frontend & Design Developer",
-    period: "2023 - 2025",
+    period: "2024 - 2025",
     location: "Remote / Campus",
     description: "Worked on a variety of real-world projects like event websites, chatbot solutions, and legal aid tools. Emphasized clean UI, accessibility, and bringing functionality to life with engaging interfaces.",
     technologies: ["React", "Tailwind CSS", "Figma", "Flask", "Langflow"],
@@ -35,11 +35,11 @@ const experiences = [
   },
   {
   company: "CSI VNR Student Chapter",
-  position: "Core Commitee Member",
-  period: "2022 - Present",
+  position: "Technical Head of CSI",
+  period: "2024 - Present",
   location: "VNRVJIET",
-  description: "Contributed to club-led tech events and designathons. Handled web design, coordinated online infrastructure, and helped in judging and evaluation workflows.",
-  technologies: ["Event Planning", "Web Development", "Figma", "Tailwind CSS"],
+  description: "Leading technical initiatives and club-led tech events as Technical Head. Spearheaded web development projects, coordinated technical infrastructure, and mentored team members in technology implementation and evaluation workflows.",
+  technologies: ["Event Planning", "Web Development", "Figma", "Tailwind CSS", "Team Leadership"],
   logo: "💡",
   color: "from-blue-500 to-teal-500"
 },
@@ -111,11 +111,11 @@ export default function Experience() {
                         {exp.logo}
                       </motion.div>
                       <div className="flex-1">
-                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <div className="flex flex-col xl:flex-row xl:items-center xl:justify-between mb-2 gap-2">
                           <h3 className={`text-xl font-semibold bg-gradient-to-r ${exp.color} bg-clip-text text-transparent`}>
                             {exp.position}
                           </h3>
-                          <span className="text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full">
+                          <span className="text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full whitespace-nowrap self-start xl:self-auto">
                             {exp.period}
                           </span>
                         </div>
